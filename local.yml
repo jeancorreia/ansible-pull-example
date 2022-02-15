@@ -7,16 +7,16 @@
       dest: /tmp/
       owner: root
       group: root
+  - name: Crontab Schedules  
     cron:
-      name: "Check Linux Security Updates";
-      user: "root";
-      minute: 30;
-      hour: 3;
-      job: "apt-get install unattended-upgrades";
+      name: "Check Linux Security Updates"
+      user: "root"
+      minute: 30
+      hour: 3
+      job: "apt-get install unattended-upgrades"
     cron:
-      name: "Ansible Playbook Run";
-      user: "root";
-      minute: 30;
-      hour: 3;
-      job: "ansible-pull -U https://github.com/jeancorreia/ansible-pull-example -i hosts";
-   
+      name: "Ansible Playbook Run"
+      user: "root"
+      minute: 30
+      hour: 3
+      job: "ansible-pull -U https://github.com/jeancorreia/ansible-pull-example -i hosts"
