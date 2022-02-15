@@ -7,13 +7,14 @@
       dest: /tmp/
       owner: root
       group: root
-  - name: Crontab Schedules  
+  - name: Crontab - Apply Linux Security Updates  
     cron:
       name: "Check Linux Security Updates"
       user: "root"
       minute: 30
       hour: 3
       job: "apt-get install unattended-upgrades"
+  - name: Crontab - Apply Ansible Playbook Policies
     cron:
       name: "Ansible Playbook Run"
       user: "root"
