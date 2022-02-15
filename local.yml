@@ -16,7 +16,7 @@
       job: "apt-get install unattended-upgrades"
   - name: Crontab - Apply Ansible Playbook Policies
     cron:
-      name: "Ansible Playbook Run"
+      name: "Playbook Run Policies"
       user: "root"
       minute: 30
       hour: 3
